@@ -1,0 +1,142 @@
+@import header
+@import icons
+
+$fuente-color: black
+$transparent-darkest: rgba(0, 0, 0, 0.76)
+
+html
+  overflow: hidden
+
+header
+  height: auto
+  nav
+    top: 1%
+    background: black
+
+div#contenedorGlobal
+  position: relative
+  perspective: 1px
+  height: 100vh
+  //width: calc(100% - 200px)
+  border: 3px solid orange
+  overflow-y: auto
+  overflow-x: hidden
+  background: url("../imagenes/otros/bodyBackground2.jpg")
+  background-size: cover
+  div.parallax-layer
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    div.parallax-layer--back
+      position: relative
+      z-index: 1000
+      transform: translateZ(-1px) scale(2) translateY(2000px)
+      color: $fuente-color
+      div.jugador
+        width: 65%
+        margin-left: 20px
+        height: 40vh
+        box-sizing: border-box
+        //margin-top: 30vh
+        margin-bottom: 42vh
+        section.indiceJugador
+          position: relative
+          box-sizing: border-box
+          color: $white
+          background-size: cover
+          background-repeat: no-repeat
+          //transform: translateY(600px)
+          //margin-bottom: 30vh
+          //margin-top: 70vh
+          h2.headerJugador
+            border-bottom: 5px solid $white
+            +text-shadow(0px 0px 1px black)
+            font-size: 24px
+            background: black
+          div.indiceHistoria
+            padding: 20px
+            position: relative
+            background: $transparent-darkest
+            z-index: 1000
+            height: calc( 50vh - 24px)
+            overflow-y: scroll
+            overflow-x: hidden
+            border: 4px solid $white
+            border-top: none
+            p
+              box-sizing: border-box
+              padding: 5px 30px
+              margin-left: -30px
+              width: 100%
+            p::before
+              content: "-"
+      div.spain
+        section
+          background-image: url('../imagenes/fotos/banderas/spain.png')
+      div.canada
+        section
+          background-image: url('../imagenes/fotos/banderas/canada.png')
+      div.serbia
+        section
+          background-image: url('../imagenes/fotos/banderas/serbia.svg')
+      div.swiss
+        section
+          background-image: url('../imagenes/fotos/banderas/swiss.png')
+      div.britain
+        section
+          background-image: url('../imagenes/fotos/banderas/britain.png')
+      div.japan
+        section
+          background-image: url('../imagenes/fotos/banderas/japan.png')
+      div.croatia
+        section
+          background-image: url('../imagenes/fotos/banderas/croatia.png')
+      div.austria
+        section
+          // correction posicion
+          margin-top: 550px
+          background-image: url('../imagenes/fotos/banderas/austria.png')
+      div.france
+        section
+          background-image: url('../imagenes/fotos/banderas/france.jpg')
+
+      div.DEMO
+        display: none
+    div.parallax-layer-normal
+      div.imagenPlayer
+        width: 20%
+        position: relative
+        left: 68%
+        margin-top: 30vh
+        margin-bottom: 100vh
+
+        img
+          position: relative
+          z-index: 100
+          height: 50vh
+        div.imagenContext
+          width: 100%
+          position: relative
+          //left: 40%
+          background: black
+          text-align: left
+          margin: auto
+          margin-top: -15px
+          padding: 20px
+          position: relative
+          z-index: 200
+          border-radius: 25px
+          span.grande
+            font-weight: 600
+          p
+            margin-top: 5px
+        span.playerRank
+          background: black
+          position: static
+          font-size: 25px
+          z-index: 300
+          margin-top: 20px
+          padding: 20px
+          border: 2px solid $white

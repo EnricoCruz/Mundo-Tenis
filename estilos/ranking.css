@@ -1,0 +1,414 @@
+/* line 48, sass/_header.sass */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* line 51, sass/_header.sass */
+a {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 54, sass/_header.sass */
+a:active {
+  color: inherit; }
+
+/* line 57, sass/_header.sass */
+#headerBackground {
+  background-image: url("../imagenes/otros/headerBackground.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px; }
+
+/* line 63, sass/_header.sass */
+div.contenedor {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  color: inherit;
+  border-top: 3px solid #bdbdbd;
+  display: flex; }
+
+/* line 71, sass/_header.sass */
+header {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  z-index: 999; }
+  /* line 77, sass/_header.sass */
+  header nav {
+    font-family: "Archivo Black", sans-serif;
+    width: 100%;
+    border-bottom: 3px solid #bdbdbd;
+    border-top: 3px solid #bdbdbd;
+    -webkit-box-shadow: 0px 10px 30px black;
+    -moz-box-shadow: 0px 10px 30px black;
+    -ms-box-shadow: 0px 10px 30px black;
+    box-shadow: 0px 10px 30px black;
+    -webkit-transition: background-color 0.5s linear 0s;
+    -o-transition: background-color 0.5s linear 0s;
+    transition: background-color 0.5s linear 0s;
+    -moz-transition: background-color 0.5s linear 0s; }
+    /* line 84, sass/_header.sass */
+    header nav a {
+      color: #bdbdbd;
+      text-decoration: none;
+      font-size: 2em;
+      padding: 0px 15px;
+      border-right: 2px solid #bdbdbd;
+      border-top: 2px solid #bdbdbd; }
+    /* line 92, sass/_header.sass */
+    header nav a:hover {
+      background: #bdbdbd;
+      color: black; }
+    /* line 95, sass/_header.sass */
+    header nav a:active {
+      color: inherit;
+      position: relative;
+      padding-top: 1px;
+      top: 3px;
+      background: green; }
+    @media screen and (max-width: 1000px) {
+      /* line 77, sass/_header.sass */
+      header nav {
+        display: block;
+        width: 100%; }
+        /* line 104, sass/_header.sass */
+        header nav a {
+          display: block;
+          font-size: 1.2em; } }
+  /* line 108, sass/_header.sass */
+  header nav.absolute {
+    position: absolute;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.44); }
+  /* line 112, sass/_header.sass */
+  header nav.fixed {
+    position: fixed;
+    top: 0%;
+    background: black;
+    z-index: 1000; }
+    @media screen and (max-width: 1000px) {
+      /* line 112, sass/_header.sass */
+      header nav.fixed {
+        top: -15px; } }
+  /* line 119, sass/_header.sass */
+  header #headerLogo {
+    width: calc(100% - 40px);
+    padding: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+    border-bottom: 5px solid #bdbdbd;
+    text-decoration: underline; }
+    /* line 128, sass/_header.sass */
+    header #headerLogo img {
+      height: 100px;
+      width: auto;
+      margin-top: 20px;
+      margin-left: 10%;
+      display: inline-block;
+      position: absolute;
+      -webkit-filter: invert(90%);
+      -webkit-moz-filter: invert(90%);
+      -moz-moz-filter: invert(90%);
+      -ms-moz-filter: invert(90%);
+      -o-filter: invert(90%); }
+    /* line 136, sass/_header.sass */
+    header #headerLogo span#headerLogotipo {
+      font-size: 4em;
+      color: rgba(0, 0, 0, 0.44);
+      margin-left: 15%;
+      -webkit-text-shadow: 0px 1px 4px black;
+      -moz-text-shadow: 0px 1px 4px black;
+      -ms-text-shadow: 0px 1px 4px black;
+      text-shadow: 0px 1px 4px black;
+      font-family: "Archivo Black", sans-serif; }
+      /* line 142, sass/_header.sass */
+      header #headerLogo span#headerLogotipo span {
+        color: #bdbdbd; }
+      /* line 144, sass/_header.sass */
+      header #headerLogo span#headerLogotipo span:hover {
+        color: inherit; }
+    @media screen and (max-width: 1000px) {
+      /* line 147, sass/_header.sass */
+      header #headerLogo span#headerLogotipo {
+        font-size: 2em;
+        margin-left: 0;
+        width: 100%; }
+        /* line 151, sass/_header.sass */
+        header #headerLogo span#headerLogotipo img {
+          display: none; } }
+
+/* line 154, sass/_header.sass */
+h2.noticiasHeader {
+  width: 100%;
+  display: block;
+  font-family: "Archivo Black", sans-serif;
+  -webkit-background: linear-gradient(#454545, #838383);
+  -moz-background: linear-gradient(#454545, #838383);
+  -ms-background: linear-gradient(#454545, #838383);
+  background: linear-gradient(#454545, #838383);
+  text-indent: 50px;
+  padding: 10px 0;
+  font-size: 25px;
+  border: 5px solid white;
+  box-sizing: border-box;
+  font-weight: 600; }
+
+/* line 166, sass/_header.sass */
+#ranking, #noticias {
+  margin-top: 5%;
+  margin-left: 3%; }
+
+@media screen and (max-width: 1000px) {
+  /* line 174, sass/_header.sass */
+  div.contenedor {
+    flex-flow: column; }
+    /* line 176, sass/_header.sass */
+    div.contenedor section#noticias, div.contenedor section#ranking {
+      display: block;
+      margin: auto;
+      margin-top: 25px;
+      width: 100% !important; }
+    /* line 182, sass/_header.sass */
+    div.contenedor section table {
+      width: 100%;
+      padding-left: 0px;
+      font-size: 0.6em; }
+    /* line 186, sass/_header.sass */
+    div.contenedor section table.tableSection {
+      width: 100%; } }
+/* line 189, sass/_header.sass */
+aside {
+  height: 100%;
+  width: 10%;
+  min-width: 155px;
+  max-width: 280px;
+  z-index: 1500;
+  right: 0px;
+  border-left: 3px solid #bdbdbd;
+  transition: background 0.5s, top 0.5s; }
+  /* line 198, sass/_header.sass */
+  aside nav {
+    height: 100%;
+    display: flex; }
+    /* line 201, sass/_header.sass */
+    aside nav ul {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 100%; }
+      /* line 206, sass/_header.sass */
+      aside nav ul li {
+        list-style: none;
+        color: #bdbdbd;
+        text-align: center;
+        border-bottom: 2px solid #bdbdbd; }
+        /* line 211, sass/_header.sass */
+        aside nav ul li span {
+          font-style: "Sahitya", serif;
+          font-size: 1.6em; }
+        /* line 214, sass/_header.sass */
+        aside nav ul li span:hover {
+          background: none; }
+        /* line 216, sass/_header.sass */
+        aside nav ul li a {
+          font-style: "Sahitya", serif;
+          text-align: center;
+          text-decoration: none;
+          color: inherit;
+          font-size: 1.5em;
+          line-height: 200%;
+          display: flex;
+          justify-content: center; }
+      /* line 225, sass/_header.sass */
+      aside nav ul li:hover {
+        background: green;
+        color: black; }
+
+@media screen and (max-width: 1000px) {
+  /* line 228, sass/_header.sass */
+  aside {
+    display: none; } }
+
+/* line 231, sass/_header.sass */
+aside.fixed {
+  position: fixed;
+  top: 0px;
+  background: black; }
+
+/* line 235, sass/_header.sass */
+aside.absolute {
+  position: absolute;
+  top: none;
+  background: rgba(0, 0, 0, 0.44); }
+
+/* line 3, sass/_icons.sass */
+header nav a#navHome {
+  background-image: url("../imagenes/otros/icons/home1.png");
+  background-size: cover;
+  position: relative;
+  padding: 0 35px;
+  margin-left: 0;
+  -webkit-transition: 0.3s background-image linear 0s;
+  -o-transition: 0.3s background-image linear 0s;
+  transition: 0.3s background-image linear 0s;
+  -moz-transition: 0.3s background-image linear 0s; }
+/* line 11, sass/_icons.sass */
+header nav a#navHome:hover {
+  background-image: url("../imagenes/otros/icons/home.png"); }
+/* line 13, sass/_icons.sass */
+header nav a.navIcons {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll; }
+
+/* line 7, sass/ranking.sass */
+html {
+  overflow: hidden; }
+
+/* line 10, sass/ranking.sass */
+header {
+  height: auto; }
+  /* line 12, sass/ranking.sass */
+  header nav {
+    top: 1%;
+    background: black; }
+
+/* line 16, sass/ranking.sass */
+div#contenedorGlobal {
+  position: relative;
+  perspective: 1px;
+  height: 100vh;
+  border: 3px solid orange;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: url("../imagenes/otros/bodyBackground2.jpg");
+  background-size: cover; }
+  /* line 26, sass/ranking.sass */
+  div#contenedorGlobal div.parallax-layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    /* line 32, sass/ranking.sass */
+    div#contenedorGlobal div.parallax-layer div.parallax-layer--back {
+      position: relative;
+      z-index: 1000;
+      transform: translateZ(-1px) scale(2) translateY(2000px);
+      color: black; }
+      /* line 37, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.jugador {
+        width: 65%;
+        margin-left: 20px;
+        height: 40vh;
+        box-sizing: border-box;
+        margin-bottom: 42vh; }
+        /* line 44, sass/ranking.sass */
+        div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.jugador section.indiceJugador {
+          position: relative;
+          box-sizing: border-box;
+          color: #bdbdbd;
+          background-size: cover;
+          background-repeat: no-repeat; }
+          /* line 53, sass/ranking.sass */
+          div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.jugador section.indiceJugador h2.headerJugador {
+            border-bottom: 5px solid #bdbdbd;
+            -webkit-text-shadow: 0px 0px 1px black;
+            -moz-text-shadow: 0px 0px 1px black;
+            -ms-text-shadow: 0px 0px 1px black;
+            text-shadow: 0px 0px 1px black;
+            font-size: 24px;
+            background: black; }
+          /* line 58, sass/ranking.sass */
+          div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.jugador section.indiceJugador div.indiceHistoria {
+            padding: 20px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.76);
+            z-index: 1000;
+            height: calc( 50vh - 24px);
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: 4px solid #bdbdbd;
+            border-top: none; }
+            /* line 68, sass/ranking.sass */
+            div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.jugador section.indiceJugador div.indiceHistoria p {
+              box-sizing: border-box;
+              padding: 5px 30px;
+              margin-left: -30px;
+              width: 100%; }
+            /* line 73, sass/ranking.sass */
+            div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.jugador section.indiceJugador div.indiceHistoria p::before {
+              content: "-"; }
+      /* line 76, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.spain section {
+        background-image: url("../imagenes/fotos/banderas/spain.png"); }
+      /* line 79, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.canada section {
+        background-image: url("../imagenes/fotos/banderas/canada.png"); }
+      /* line 82, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.serbia section {
+        background-image: url("../imagenes/fotos/banderas/serbia.svg"); }
+      /* line 85, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.swiss section {
+        background-image: url("../imagenes/fotos/banderas/swiss.png"); }
+      /* line 88, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.britain section {
+        background-image: url("../imagenes/fotos/banderas/britain.png"); }
+      /* line 91, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.japan section {
+        background-image: url("../imagenes/fotos/banderas/japan.png"); }
+      /* line 94, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.croatia section {
+        background-image: url("../imagenes/fotos/banderas/croatia.png"); }
+      /* line 97, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.austria section {
+        margin-top: 550px;
+        background-image: url("../imagenes/fotos/banderas/austria.png"); }
+      /* line 102, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.france section {
+        background-image: url("../imagenes/fotos/banderas/france.jpg"); }
+      /* line 105, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer--back div.DEMO {
+        display: none; }
+    /* line 108, sass/ranking.sass */
+    div#contenedorGlobal div.parallax-layer div.parallax-layer-normal div.imagenPlayer {
+      width: 20%;
+      position: relative;
+      left: 68%;
+      margin-top: 30vh;
+      margin-bottom: 100vh; }
+      /* line 115, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer-normal div.imagenPlayer img {
+        position: relative;
+        z-index: 100;
+        height: 50vh; }
+      /* line 119, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer-normal div.imagenPlayer div.imagenContext {
+        width: 100%;
+        position: relative;
+        background: black;
+        text-align: left;
+        margin: auto;
+        margin-top: -15px;
+        padding: 20px;
+        position: relative;
+        z-index: 200;
+        border-radius: 25px; }
+        /* line 131, sass/ranking.sass */
+        div#contenedorGlobal div.parallax-layer div.parallax-layer-normal div.imagenPlayer div.imagenContext span.grande {
+          font-weight: 600; }
+        /* line 133, sass/ranking.sass */
+        div#contenedorGlobal div.parallax-layer div.parallax-layer-normal div.imagenPlayer div.imagenContext p {
+          margin-top: 5px; }
+      /* line 135, sass/ranking.sass */
+      div#contenedorGlobal div.parallax-layer div.parallax-layer-normal div.imagenPlayer span.playerRank {
+        background: black;
+        position: static;
+        font-size: 25px;
+        z-index: 300;
+        margin-top: 20px;
+        padding: 20px;
+        border: 2px solid #bdbdbd; }

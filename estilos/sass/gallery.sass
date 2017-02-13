@@ -1,0 +1,17 @@
+@import header
+@import icons
+
+
+div.container
+  transform: translateX(-50px)
+  width: 80%
+div.thumbnail
+  background: $white
+  +transition(filter .4s linear .3s)
+div.thumbnail:hover
+  +filter(grayscale(70%))
+
+div.container
+  color: $white
+  h1
+    +text-shadow(0px 3px 25px black)

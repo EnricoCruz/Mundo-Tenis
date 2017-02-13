@@ -1,0 +1,73 @@
+@import header
+@import icons
+*
+  box-sizing: border-box
+
+.contenedor_3
+  background-image: url("../imagenes/otros/bodyBackground3.jpg")
+
+div#centroNoticia
+  width: calc(100% - 200px)
+  padding: 0 150px 0 100px
+  position: relative
+  color: $white
+  font-family: $true-default-font
+  section.NoticiaGrande
+    padding: 20px
+    background: $transparent-dark
+    img
+      display: block
+      margin: auto
+      width: 60%
+      border: 3px solid white
+      border-radius: 15px
+    span.imgDescription
+      display: block
+      position: relative
+      font-size: 1em
+      margin: auto
+      margin-top: 0%
+      background: black
+      color: $white
+      width: 60%
+      +text-shadow(0px 5px 35px black)
+    h1,h2,div.imagenContenedor,p, ul
+      margin-top: 25px
+    h1
+      border-bottom: 4px solid $white
+      font-size: 2em
+    h2
+      border-bottom: 3px solid $white
+    p
+      text-indent: 24px
+      text-align: justify
+    p::first-letter
+      font-size: 25px
+      font-family: $indent-font
+    p.fecha
+      text-align: right
+      margin-top: 40px
+    p.fecha::first-letter
+      font-size: 1em
+    ul
+      list-style-type: none
+      background: black
+      li
+        display: inline-block
+        border-bottom: 2px solid $white
+        padding: 5px
+        margin-left: 15px
+        a
+          display: flex
+
+div#centroNoticia
+  @media screen and (max-width: $max-width)
+    width: 100%
+    padding: 0
+    section.NoticiaGrande
+      padding: 8px
+      width: 100%
+      img
+        width: 95%
+      span.imgDescription
+        width: 95%

@@ -1,0 +1,38 @@
+/*
+Error: Invalid CSS after "": expected expression (e.g. 1px, bold), was "=text-shadow =t..."
+        on line 8 of C:\Users\Casa\Documents\Enrico\master D\ejercicios\HTML-CSS\TRABAJO FINAL\estilos\sass\info variables.sass
+
+3: $indent-style: 'Carter One', cursive
+4: $white: white
+5: $green: green
+6: $transparent-dark: rgba(0, 0, 0, 0.44)
+7: 
+8: =box-shadow =text-shadow =transition =filter =background-gradient =transition
+
+Backtrace:
+C:\Users\Casa\Documents\Enrico\master D\ejercicios\HTML-CSS\TRABAJO FINAL\estilos\sass\info variables.sass:8
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/lexer.rb:220:in `expected!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:602:in `assert_done'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/parser.rb:122:in `parse_mixin_definition_arglist'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:1074:in `parse_mixin_definition'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:639:in `parse_line'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:525:in `build_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:544:in `block in append_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `each'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:543:in `append_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:396:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"\": expected expression (e.g. 1px, bold), was \"=text-shadow =t...\"\A         on line 8 of C:\Users\Casa\Documents\Enrico\master D\ejercicios\HTML-CSS\TRABAJO FINAL\estilos\sass\info variables.sass\A \A 3: $indent-style: 'Carter One', cursive\A 4: $white: white\A 5: $green: green\A 6: $transparent-dark: rgba(0, 0, 0, 0.44)\A 7: \A 8: =box-shadow =text-shadow =transition =filter =background-gradient =transition"; }
