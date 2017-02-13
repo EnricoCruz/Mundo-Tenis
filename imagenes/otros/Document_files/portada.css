@@ -1,0 +1,86 @@
+*{margin:0px; padding:0px;}
+header{
+height: 300px;
+width: 100%;
+position: absolute;
+top: 0%;
+}
+#headerBackground{
+  background-image:url("../imagenes/otros/headerBackground2.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  height: 300px;
+  box-shadow: 0px 10px 30px black;
+  transition: background-position-y .2s linear 0s;
+}
+#headerBackgroundFiller{
+  position: absolute;
+  height: 300px;
+  top: 0px;
+  transition: background-color .2s linear 0s;
+  z-index: 3;
+}
+header nav{
+  position: absolute;
+  bottom: 0%;
+  font-family: 'Archivo Black', sans-serif;
+  background: rgba(0, 0, 0, 0.44);
+  width: 100%;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+}
+header nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 0px 15px;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+}
+header nav a:hover{
+  background: white;
+  color: black;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+}
+#headerLogo{
+  width: 100%;
+  padding: 20px ;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  border-bottom: 5px solid black;
+}
+#headerLogo span#headerLogotipo{
+  font-size: 4em;
+  color: rgba(0, 0, 0, 0.59);
+  margin-left: 15%;
+  text-shadow: 0px 1px 4px black;
+  font-family: 'Archivo Black', sans-serif;
+}
+#headerLogo span#headerLogotipo span{
+  color: white;
+}
+#headerLogo span#headerLogotipo span:hover{
+  color: inherit;
+}
+#headerLogo img{
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 10%;
+  display: inline-block;
+  position: absolute;
+}
+div#contenedor1{
+  height: 100vh;
+  background-image: url("../imagenes/otros/bodyBackground1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+div#contenedor2{
+  height: 100vh;
+  background-image: url("../imagenes/otros/bodyBackground2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
