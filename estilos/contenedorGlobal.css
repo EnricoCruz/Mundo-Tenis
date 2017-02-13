@@ -1,0 +1,117 @@
+/*** Este CSS contendrá todos los elementos internos
+de ContenedorGlobal ***/
+body{color: white;}
+
+div.contenedor{
+  background-attachment: fixed;
+  background-size: cover;
+  color: inherit;
+  border-top: 3px solid white;
+  display: flex;
+}
+.contenedor_1{background-image: url("../imagenes/otros/bodyBackground1.jpg");}
+.contenedor_2{background-image: url("../imagenes/otros/bodyBackground2.jpg");height: 100vh;}
+
+.contenedor section.tableSection{
+      /* section noticias*/
+      position: relative;
+      font-family: 'Lora', serif;
+      box-sizing:border-box;
+      margin-left:  10%;
+      margin-top: 10%;
+      width: 40%;
+      min-width: 600px;
+      max-width: 800px;
+
+      box-shadow: 0px 3px 50px black;
+      -webkit-box-shadow: 0px 3px 50px black;
+      -moz-box-shadow: 0px 3px 50px black;
+      -o-box-shadow: 0px 3px 50px black;
+    }
+      #noticiasHeader{
+      width: 100%;
+      display: block;
+      background: linear-gradient(rgba(80, 73, 72, 0.78), rgba(179, 179, 179, 0.81));
+      -webkit-background: linear-gradient(rgba(80, 73, 72, 0.78), rgba(179, 179, 179, 0.81));
+      -moz-background: linear-gradient(rgba(80, 73, 72, 0.78), rgba(179, 179, 179, 0.81));
+      -o-background: linear-gradient(rgba(80, 73, 72, 0.78), rgba(179, 179, 179, 0.81));
+
+      box-shadow: 0px 3px 50px black;
+      text-indent: 50px;
+      padding: 10px 0;
+      font-size: 25px;
+      border: 5px solid white;
+      border-bottom: none;
+      box-sizing: border-box;
+      font-weight: 600;
+    }
+    .contenedor table{
+      width: 100%;
+      border-left: 5px solid white;
+      border-right: 5px solid white;
+      padding: 20px;
+      font-size: 16px;
+      text-align: center;
+      text-shadow: 0px 0px 4px black;
+    }
+    .contenedor table:nth-child(even){
+      background: linear-gradient(to left, rgba(83, 83, 83, 0.62), rgba(255, 255, 255, 0.04))
+    }
+    .contenedor table:hover{
+      filter: brightness(130%);
+      background: linear-gradient(to left, rgba(101, 101, 101, 0.72), rgba(255, 255, 255, 0.14))
+    }
+    .contenedor table img{
+      min-width: 250px;
+      width: 40%;
+      display: block;
+      margin: auto;
+    }
+    .table-border-bottom{
+      border-bottom: 3px solid white;
+    }
+    /* lista de anchors*/
+    #listContainer{
+      background: black;
+      border: 5px solid white;
+    }
+    .listAnchors{
+      margin: auto;
+      width: 200px;
+    }
+    .listAnchors li{
+      display: inline-block;
+    }
+    /* media screen adaptadivo*/
+    @media screen and (max-width : 1000px){
+      div.contenedor{
+        padding-top: 0;
+      }
+      .contenedor section{
+        margin: auto;
+      }
+    }/* fin section noticias*/
+
+#ranking{
+      margin-top: 10%;
+      margin-left: 3%;
+      width: 30%;
+    }
+    #ranking section  img{
+      display: block;
+      border: 5px solid white;
+    }
+    #ranking table{border-collapse: collapse; line-height: 150%;}
+    #ranking table:hover{
+      background: inherit;
+      filter: none;
+    }
+    #ranking table tr.tableRow:nth-child(even){
+      background:rgba(80, 73, 72, 0.78);
+    }
+    #ranking table tr.tableRow:hover{
+      background:rgba(156, 156, 156, 0.78);
+    }
+    #ranking table td{
+      border: 1px solid white;
+    }

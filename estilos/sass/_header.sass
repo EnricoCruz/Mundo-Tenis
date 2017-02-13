@@ -1,0 +1,242 @@
+$default-font: 'Archivo Black', sans-serif
+$true-default-font: 'Lora', sans-serif
+$nav-font: 'Sahitya', serif
+$indent-font: 'Carter One', cursive
+$white: rgb(189, 189, 189)
+$green: rgb(0, 96, 7)
+$transparent-dark: rgba(0, 0, 0, 0.44)
+$max-width: 1000px
+
+=box-shadow($value)
+  -webkit-box-shadow: $value
+  -moz-box-shadow:    $value
+  -ms-box-shadow:     $value
+  box-shadow:         $value
+
+=text-shadow($value)
+  -webkit-text-shadow: $value
+  -moz-text-shadow   : $value
+  -ms-text-shadow    : $value
+  text-shadow        : $value
+
+=transition($value)
+  -webkit-transition: $value
+  -moz-transition:    $value
+  -ms-transition:     $value
+  transition:         $value
+
+=filter($value)
+  -webkit-filter: $value
+  -webkit-moz-filter: $value
+  -moz-moz-filter: $value
+  -ms-moz-filter: $value
+  -o-filter: $value
+
+=background-gradient($value)
+  -webkit-background: $value
+  -moz-background: $value
+  -ms-background: $value
+  background: $value
+
+=transition($value)
+  -webkit-transition: $value
+  -o-transition: $value
+  transition: $value
+  -moz-transition: $value
+
+
+*
+  margin: 0px
+  padding: 0px
+a
+  color: inherit
+  text-decoration: none
+a:active
+  color: inherit
+
+
+a.active
+  background-color: $green
+
+#headerBackground
+  background:
+    image: url("../imagenes/otros/headerBackground.jpg")
+    attachment: fixed
+    size: cover
+  height: 300px
+div.contenedor
+  min-height: 600px
+  background:
+    attachment: fixed
+    size: cover
+  color: inherit
+  //border-top: 3px solid $white
+  display: flex
+header
+  height: 300px
+  width: 100%
+  position: absolute
+  top: 0%
+  z-index: 999
+  nav
+    font-family: $default-font
+    width: 100%
+    border-bottom: 3px solid $white
+    border-top: 3px solid $white
+    +box-shadow(0px 10px 30px black)
+    +transition(background-color 0.5s linear 0s)
+    a
+      color: $white
+      text-decoration: none
+      //position: static
+      font-size: 2em
+      padding: 0px 15px
+      border-right: 2px solid $white
+      border-top: 2px solid $white
+    a:hover
+      background: $white
+      color: black
+    a:active
+      color: inherit
+      position: relative
+      padding-top: 1px
+      top: 3px
+      background: $green
+    @media screen and (max-width: $max-width)
+      display: block
+      width: 100%
+      a
+        display: block
+        font-size: 1.2em
+
+  nav.absolute
+    position: absolute
+    bottom: 0%
+    background: $transparent-dark
+  nav.fixed
+    position: fixed
+    top: 0%
+    background: black
+    z-index: 1000
+    @media screen and (max-width: $max-width)
+      top: -15px
+  #headerLogo
+    width: calc(100% - 40px)
+    // 100% - padding laterals
+    padding: 20px
+    overflow: hidden
+    position: absolute
+    top: 0%
+    border-bottom: 5px solid $white
+    text-decoration: underline
+    img
+      height: 100px
+      width: auto
+      margin-top: 20px
+      margin-left: 10%
+      display: inline-block
+      position: absolute
+      +filter(invert(90%))
+    span#headerLogotipo
+      font-size: 4em
+      color: $transparent-dark
+      margin-left: 15%
+      +text-shadow(0px 1px 4px black)
+      font-family: $default-font
+      span
+        color: $white
+      span:hover
+        color: inherit
+    @media screen and (max-width: $max-width)
+      span#headerLogotipo
+        font-size: 2em
+        margin-left: 0
+        width: 100%
+        img
+          display: none
+
+h2.noticiasHeader
+  width: 100%
+  display: block
+  font-family: $default-font
+  +background-gradient(linear-gradient(rgba(69, 69, 69, 1), rgba(131, 131, 131, 1)))
+  text-indent: 50px
+  padding: 10px 0
+  font-size: 25px
+  border: 5px solid white
+  box-sizing: border-box
+  font-weight: 600
+
+#ranking, #noticias
+  margin-top: 5%
+  margin-left: 3%
+
+
+  //// nav style
+
+@media screen and (max-width: $max-width)
+  div.contenedor
+    flex-flow: column
+    section#noticias, section#ranking
+      display: block
+      margin: auto
+      margin-top: 25px
+      width: 100%!important
+    section
+      table
+        width: 100%
+        padding-left: 0px
+        font-size: .6em
+      table.tableSection
+        width: 100%
+
+aside
+  height: 100%
+  width: 10%
+  min-width: 155px
+  max-width: 280px
+  z-index: 1500
+  right: 0px
+  border-left: 3px solid $white
+  transition: background .5s, top .5s
+  nav
+    height: 100%
+    display: flex
+    ul
+      display: flex
+      flex-flow: column
+      justify-content: center
+      width: 100%
+      li
+        list-style: none
+        color: $white
+        text-align: center
+        border-bottom: 2px solid $white
+        span
+          font-style: $nav-font
+          font-size: 1.6em
+        span:hover
+          background: none
+        a
+          font-style: $nav-font
+          text-align: center
+          text-decoration: none
+          color: inherit
+          font-size: 1.5em
+          line-height: 200%
+          display: flex
+          justify-content: center
+      li:hover
+        background: $green
+        color: black
+aside
+  @media screen and (max-width: $max-width)
+    display: none!important
+aside.fixed
+  position: fixed
+  top: 0px
+  background: black
+aside.absolute
+  position: absolute
+  top: none
+  background: $transparent-dark
